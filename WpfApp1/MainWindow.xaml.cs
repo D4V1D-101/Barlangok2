@@ -29,6 +29,7 @@ namespace WpfApp1
 
                 bar.Add(new Barlang(sr.ReadLine().Trim()));
             }
+
         }
     }
 }

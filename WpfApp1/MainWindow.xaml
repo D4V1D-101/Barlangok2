@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="257" Width="463">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="247*"/>
+            <ColumnDefinition Width="553*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Azonosító:" Grid.ColumnSpan="2" Margin="10,27,310,181"/>
+        <Label Content="Barlang neve:" Grid.ColumnSpan="2" Margin="10,65,310,143"/>
+        <Label Content="Hosszúság:" Grid.ColumnSpan="2" Margin="10,104,310,104"/>
+        <Label Content="Mélység:" Grid.ColumnSpan="2" Margin="10,142,310,66"/>
+        <TextBox x:Name="Azonositotxtbox" HorizontalAlignment="Left" Height="33" Margin="131,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="hosszusagtxtbox" HorizontalAlignment="Left" Height="33" Margin="131,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="124" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="melysegtxtbox" HorizontalAlignment="Left" Height="33" Margin="131,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Grid.ColumnSpan="2"/>
+        <Button x:Name="BarlangKereseseButton" Grid.Column="1" Content="BarlangKeresése" HorizontalAlignment="Left" Height="33" Margin="160,27,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button x:Name="AdatokMenteseButton"  Grid.Column="1" Content="Adatokmentése" HorizontalAlignment="Left" Height="33" Margin="160,121,0,0" VerticalAlignment="Top" Width="118" IsEnabled="False"/>
 
     </Grid>
 </Window>
